@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #eb0c0c;
+    text-align: center;
+}
+.parallax1 {
+    background-image: url(istockphoto-1480812893-612x612.webp);
+    min-height: 100%;
+}
+.parallax2 {
+    background-image: url(monk.jpg);
+    min-height: 60%;
+}
+.parallax3 {
+    background-image: url(asia-275954_640.jpg);
+    min-height: 40%;
+}
+.parallax4 {
+    background-image: url(ama\ dabam.jpg);
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Important*/
+}
+
+.head {
+    position: absolute;
+    color: #f50505;
+    font-size: 500%;
+    top:50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+}
+
+.head:hover{
+    color:transparent;
+}
+
+
+section {
+    overflow: auto;
+    padding: 50px 80px;
+
+}
+
+footer{
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+@media (max-width:800px) {
+    .head{
+        font-size: 200%;
+    }
+   
+}
+
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
+
+
